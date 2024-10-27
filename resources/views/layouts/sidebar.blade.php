@@ -155,12 +155,8 @@
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <a href="#" class="dropdown-item">Status</a>
-                    <a href="./profile.html" class="dropdown-item">Profile</a>
-                    <a href="#" class="dropdown-item">Feedback</a>
-                    <div class="dropdown-divider"></div>
-                    <a href="./settings.html" class="dropdown-item">Settings</a>
-                    <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                    @include('layouts.darkmode')
+                    @include('layouts.profile-dropdown')
                 </div>
             </div>
         </div>
@@ -216,13 +212,8 @@
                             <div class="dropdown-menu-column">
                                 <a class="dropdown-item @if(Route::currentRouteName() == 'libraries.datatables') active @endif" href="{{route('libraries.datatables')}}">
                                     DataTables
-                                </a>
-                                <a class="dropdown-item @if(Route::currentRouteName() == 'libraries.listjs') active @endif" href="{{route('libraries.listjs')}}">
-                                    List.js
-                                </a>
-
+                                </a>                        
                             </div>
-
                         </div>
                     </div>
                 </li>

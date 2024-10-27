@@ -76,7 +76,7 @@
                                                     </h2>
                                                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                         <div class="accordion-body">
-                                                            <div class="bg-dark text-light px-4 py-3 rounded-3">
+                                                            <div class="px-4 rounded-3">
                                                                 @foreach(auth()->user()->recoveryCodes() as $code)
                                                                 <li>{{$code}}</li>
                                                                 @endforeach
