@@ -41,10 +41,10 @@
                             <h2 class="mb-4">My Account</h2>
 
                             <h3 class="card-title mt-4">Password</h3>
-                            <p class="card-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, illum.</p>
+                            <p class="card-subtitle">Please input your current password and your new password</p>
 
-                            <div class="row g-3">
-                                <div class="col-md">
+                            <div class="row g-2">
+                                <div class="col-sm-12">
                                     <label for="current_password" class="form-label">{{ __('Current Password') }}</label>
                                     <input id="current_password" type="password" class="form-control @error('current_password','updatePassword') is-invalid @enderror" name="current_password">
                                     @error('current_password','updatePassword')
@@ -53,7 +53,7 @@
                                     </span>
                                     @enderror
                                 </div>
-                                <div class="col-md">
+                                <div class="col-sm-12">
                                     <label for="password" class="form-label">{{ __('Password') }}</label>
 
                                     <input id="password" type="password" class="form-control @error('password','updatePassword') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -63,14 +63,13 @@
                                     </span>
                                     @enderror
                                 </div>
-                                <div class="col-md">
+                                <div class="col-sm-12">
                                     <label for="password-confirm" class="form-label">{{ __('Confirm Password') }}</label>
 
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                 </div>
 
                             </div>
-
 
                         </div>
 
